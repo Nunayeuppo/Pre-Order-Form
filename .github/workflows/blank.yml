@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order Risolisious</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pre-Order Risoles Now!</h1>
+    <p>Don't miss out on the deliciousness! Order yours today!</p>
+</header>
+
+<div class="container">
+    <h2>Order Form</h2>
+    <form action="submit-order.php" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="quantity">Quantity</label>
+        <select id="quantity" name="quantity" required>
+            <option value="1">1 Risoles</option>
+            <option value="2">2 Risoles</option>
+            <option value="3">3 Risoles</option>
+            <option value="4">4 Risoles</option>
+            <option value="5">5 Risoles</option>
+        </select>
+
+        <button type="submit">Pre-Order Now</button>
+    </form>
+</div>
+
+</body>
+</html>
